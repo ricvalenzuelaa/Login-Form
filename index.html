@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<title>LOGIN</title>
+<style>
+body{
+    font-family: arial;
+    padding: 20px;
+    form{
+        max-width: 300px;
+        margin: auto;
+
+    }
+}
+
+</style>
+<head>
+    <body>
+    
+    <h1>LOGIN</h1>
+    <form onsubmit="return validateform()" method="post" action="login.php">
+    <label>ID: </label>
+    <input type="ID" id="ID" name="ID" />
+
+    <label>Password: </label>
+    <input type="text" id="password" name="password" />
+    
+    <button type="submit">LOGIN</button>
+    </form>
+    <script src="login.js"></script>
+    </body>
+</head>
+</html>
