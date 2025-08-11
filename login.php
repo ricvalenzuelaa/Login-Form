@@ -5,7 +5,7 @@ if(!$conn){
     die("connection failed");
 }
 
-$username = $_POST['id'];
+$id = $_POST['id'];
 $password = $_POST['password'];
 
 $sql = "SELECT * FROM admin WHERE id= '$id'  AND password ='$password'";
@@ -21,3 +21,4 @@ if (mysqli_num_rows($result) > 0){
 mysqli_close($conn);
 
 ?>
+
